@@ -93,7 +93,7 @@ public class AuthenticationManager {
         return null;
     }
 
-    // Reload the users list
+    // Reload the users list.
     private static synchronized void reloadUsers() {
         List<User> reloadedUsers = loadUsers();
         synchronized (users) {
